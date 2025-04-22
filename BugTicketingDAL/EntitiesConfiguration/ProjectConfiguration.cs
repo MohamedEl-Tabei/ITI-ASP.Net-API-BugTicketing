@@ -8,12 +8,11 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace BugTicketingDAL.EntitiesConfiguration
 {
-    public class UserRoleConfiguration : IEntityTypeConfiguration<UserRole>
+    public class ProjectConfiguration : IEntityTypeConfiguration<Project>
     {
-        public void Configure(EntityTypeBuilder<UserRole> builder)
+        public void Configure(EntityTypeBuilder<Project> builder)
         {
-            builder.HasKey(u => new { u.UserId, u.Role });
-            builder.HasOne(u=>u.User).WithMany(u=>u.UserRoles).HasForeignKey(u=>u.UserId);
+            builder.HasOne(p => p.Manager).WithOne(m => m.ManagedProject).HasForeignKey<Project>(p => p.ManagerId).OnDelete(DeleteBehavior.Restrict);
         }
     }
 }

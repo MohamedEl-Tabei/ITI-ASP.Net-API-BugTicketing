@@ -4,6 +4,7 @@ using BugTicketingDAL;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BugTicketingDAL.Migrations
 {
     [DbContext(typeof(BugTicketingContext))]
-    partial class BugTicketingContextModelSnapshot : ModelSnapshot
+    [Migration("20250422123907_m02")]
+    partial class m02
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -21,36 +24,6 @@ namespace BugTicketingDAL.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
-
-            modelBuilder.Entity("BugTicketingDAL.Attachment", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<Guid>("BugId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<string>("Title")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("Type")
-                        .HasColumnType("int");
-
-                    b.Property<DateTime>("UploadedAt")
-                        .HasColumnType("datetime2");
-
-                    b.Property<Guid>("UserId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("BugId");
-
-                    b.HasIndex("UserId");
-
-                    b.ToTable("Attachment");
-                });
 
             modelBuilder.Entity("BugTicketingDAL.Bug", b =>
                 {
@@ -62,9 +35,6 @@ namespace BugTicketingDAL.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<Guid>("ProjectId")
-                        .HasColumnType("uniqueidentifier");
-
                     b.Property<int>("Status")
                         .HasColumnType("int");
 
@@ -74,38 +44,7 @@ namespace BugTicketingDAL.Migrations
 
                     b.HasKey("id");
 
-                    b.HasIndex("ProjectId");
-
                     b.ToTable("Bug");
-                });
-
-            modelBuilder.Entity("BugTicketingDAL.Project", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<DateTime>("EndDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<Guid>("ManagerId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<string>("Name")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime>("StartDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<int>("Status")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("ManagerId")
-                        .IsUnique();
-
-                    b.ToTable("Project");
                 });
 
             modelBuilder.Entity("BugTicketingDAL.User", b =>
@@ -169,47 +108,6 @@ namespace BugTicketingDAL.Migrations
                     b.ToTable("UsersRoles");
                 });
 
-            modelBuilder.Entity("BugTicketingDAL.Attachment", b =>
-                {
-                    b.HasOne("BugTicketingDAL.Bug", "Bug")
-                        .WithMany("Attachments")
-                        .HasForeignKey("BugId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("BugTicketingDAL.User", "User")
-                        .WithMany("Attachments")
-                        .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Bug");
-
-                    b.Navigation("User");
-                });
-
-            modelBuilder.Entity("BugTicketingDAL.Bug", b =>
-                {
-                    b.HasOne("BugTicketingDAL.Project", "Project")
-                        .WithMany("Bugs")
-                        .HasForeignKey("ProjectId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Project");
-                });
-
-            modelBuilder.Entity("BugTicketingDAL.Project", b =>
-                {
-                    b.HasOne("BugTicketingDAL.User", "Manager")
-                        .WithOne("ManagedProject")
-                        .HasForeignKey("BugTicketingDAL.Project", "ManagerId")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
-
-                    b.Navigation("Manager");
-                });
-
             modelBuilder.Entity("BugTicketingDAL.UserBug", b =>
                 {
                     b.HasOne("BugTicketingDAL.Bug", "Bug")
@@ -242,22 +140,11 @@ namespace BugTicketingDAL.Migrations
 
             modelBuilder.Entity("BugTicketingDAL.Bug", b =>
                 {
-                    b.Navigation("Attachments");
-
                     b.Navigation("UserBugs");
-                });
-
-            modelBuilder.Entity("BugTicketingDAL.Project", b =>
-                {
-                    b.Navigation("Bugs");
                 });
 
             modelBuilder.Entity("BugTicketingDAL.User", b =>
                 {
-                    b.Navigation("Attachments");
-
-                    b.Navigation("ManagedProject");
-
                     b.Navigation("UserBugs");
 
                     b.Navigation("UserRoles");

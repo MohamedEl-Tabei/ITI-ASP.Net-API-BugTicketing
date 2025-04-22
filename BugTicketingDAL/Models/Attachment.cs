@@ -12,5 +12,10 @@ namespace BugTicketingDAL
         public string? Title { get; set; }
         public AttachmentType Type { get; set; }
         public DateTime UploadedAt { get; set; }
+        public Guid UserId { get; set; }
+        public Guid BugId { get; set; }
+
+        public virtual User? User { get; set; }
+        public virtual Bug? Bug { get; set; }
     }
 }

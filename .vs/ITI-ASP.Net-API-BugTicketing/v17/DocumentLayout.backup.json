@@ -3,20 +3,32 @@
   "WorkspaceRootPath": "E:\\Mohamed\\ITI\\ITI-Projects\\ITI-ASP.Net-API-BugTicketing\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C84F1C8D-80FF-4BD1-9BE7-25250DD5BDB2}|BugTicketingDAL\\BugTicketingDAL.csproj|e:\\mohamed\\iti\\iti-projects\\iti-asp.net-api-bugticketing\\bugticketingdal\\models\\userbug.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C84F1C8D-80FF-4BD1-9BE7-25250DD5BDB2}|BugTicketingDAL\\BugTicketingDAL.csproj|solutionrelative:bugticketingdal\\models\\userbug.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\Mohamed\\ITI\\ITI-Projects\\ITI-ASP.Net-API-BugTicketing\\BugTicketingDAL\\Migrations\\20250422134735_m04.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:BugTicketingDAL\\Migrations\\20250422134735_m04.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C84F1C8D-80FF-4BD1-9BE7-25250DD5BDB2}|BugTicketingDAL\\BugTicketingDAL.csproj|e:\\mohamed\\iti\\iti-projects\\iti-asp.net-api-bugticketing\\bugticketingdal\\entitiesconfiguration\\projectconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C84F1C8D-80FF-4BD1-9BE7-25250DD5BDB2}|BugTicketingDAL\\BugTicketingDAL.csproj|solutionrelative:bugticketingdal\\entitiesconfiguration\\projectconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C84F1C8D-80FF-4BD1-9BE7-25250DD5BDB2}|BugTicketingDAL\\BugTicketingDAL.csproj|e:\\mohamed\\iti\\iti-projects\\iti-asp.net-api-bugticketing\\bugticketingdal\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C84F1C8D-80FF-4BD1-9BE7-25250DD5BDB2}|BugTicketingDAL\\BugTicketingDAL.csproj|solutionrelative:bugticketingdal\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C84F1C8D-80FF-4BD1-9BE7-25250DD5BDB2}|BugTicketingDAL\\BugTicketingDAL.csproj|e:\\mohamed\\iti\\iti-projects\\iti-asp.net-api-bugticketing\\bugticketingdal\\models\\project.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C84F1C8D-80FF-4BD1-9BE7-25250DD5BDB2}|BugTicketingDAL\\BugTicketingDAL.csproj|solutionrelative:bugticketingdal\\models\\project.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C84F1C8D-80FF-4BD1-9BE7-25250DD5BDB2}|BugTicketingDAL\\BugTicketingDAL.csproj|e:\\mohamed\\iti\\iti-projects\\iti-asp.net-api-bugticketing\\bugticketingdal\\entitiesconfiguration\\bugconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C84F1C8D-80FF-4BD1-9BE7-25250DD5BDB2}|BugTicketingDAL\\BugTicketingDAL.csproj|solutionrelative:bugticketingdal\\entitiesconfiguration\\bugconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C84F1C8D-80FF-4BD1-9BE7-25250DD5BDB2}|BugTicketingDAL\\BugTicketingDAL.csproj|e:\\mohamed\\iti\\iti-projects\\iti-asp.net-api-bugticketing\\bugticketingdal\\models\\bug.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C84F1C8D-80FF-4BD1-9BE7-25250DD5BDB2}|BugTicketingDAL\\BugTicketingDAL.csproj|solutionrelative:bugticketingdal\\models\\bug.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C84F1C8D-80FF-4BD1-9BE7-25250DD5BDB2}|BugTicketingDAL\\BugTicketingDAL.csproj|e:\\mohamed\\iti\\iti-projects\\iti-asp.net-api-bugticketing\\bugticketingdal\\entitiesconfiguration\\userconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C84F1C8D-80FF-4BD1-9BE7-25250DD5BDB2}|BugTicketingDAL\\BugTicketingDAL.csproj|solutionrelative:bugticketingdal\\entitiesconfiguration\\userconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C84F1C8D-80FF-4BD1-9BE7-25250DD5BDB2}|BugTicketingDAL\\BugTicketingDAL.csproj|e:\\mohamed\\iti\\iti-projects\\iti-asp.net-api-bugticketing\\bugticketingdal\\models\\userrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C84F1C8D-80FF-4BD1-9BE7-25250DD5BDB2}|BugTicketingDAL\\BugTicketingDAL.csproj|solutionrelative:bugticketingdal\\models\\userrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\Mohamed\\ITI\\ITI-Projects\\ITI-ASP.Net-API-BugTicketing\\BugTicketingDAL\\Migrations\\20250422133737_m04.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:BugTicketingDAL\\Migrations\\20250422133737_m04.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,58 +38,97 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "UserRole.cs",
-              "DocumentMoniker": "E:\\Mohamed\\ITI\\ITI-Projects\\ITI-ASP.Net-API-BugTicketing\\BugTicketingDAL\\Models\\UserRole.cs",
-              "RelativeDocumentMoniker": "BugTicketingDAL\\Models\\UserRole.cs",
-              "ToolTip": "E:\\Mohamed\\ITI\\ITI-Projects\\ITI-ASP.Net-API-BugTicketing\\BugTicketingDAL\\Models\\UserRole.cs",
-              "RelativeToolTip": "BugTicketingDAL\\Models\\UserRole.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAWAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "20250422134735_m04.cs",
+              "DocumentMoniker": "E:\\Mohamed\\ITI\\ITI-Projects\\ITI-ASP.Net-API-BugTicketing\\BugTicketingDAL\\Migrations\\20250422134735_m04.cs",
+              "RelativeDocumentMoniker": "BugTicketingDAL\\Migrations\\20250422134735_m04.cs",
+              "ToolTip": "E:\\Mohamed\\ITI\\ITI-Projects\\ITI-ASP.Net-API-BugTicketing\\BugTicketingDAL\\Migrations\\20250422134735_m04.cs",
+              "RelativeToolTip": "BugTicketingDAL\\Migrations\\20250422134735_m04.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-21T20:02:57.591Z",
+              "WhenOpened": "2025-04-22T13:47:35.826Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "UserConfiguration.cs",
-              "DocumentMoniker": "E:\\Mohamed\\ITI\\ITI-Projects\\ITI-ASP.Net-API-BugTicketing\\BugTicketingDAL\\EntitiesConfiguration\\UserConfiguration.cs",
-              "RelativeDocumentMoniker": "BugTicketingDAL\\EntitiesConfiguration\\UserConfiguration.cs",
-              "ToolTip": "E:\\Mohamed\\ITI\\ITI-Projects\\ITI-ASP.Net-API-BugTicketing\\BugTicketingDAL\\EntitiesConfiguration\\UserConfiguration.cs",
-              "RelativeToolTip": "BugTicketingDAL\\EntitiesConfiguration\\UserConfiguration.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAqAAAAAAAAAA==",
+              "DocumentIndex": 6,
+              "Title": "20250422133737_m04.cs",
+              "DocumentMoniker": "E:\\Mohamed\\ITI\\ITI-Projects\\ITI-ASP.Net-API-BugTicketing\\BugTicketingDAL\\Migrations\\20250422133737_m04.cs",
+              "RelativeDocumentMoniker": "BugTicketingDAL\\Migrations\\20250422133737_m04.cs",
+              "ToolTip": "E:\\Mohamed\\ITI\\ITI-Projects\\ITI-ASP.Net-API-BugTicketing\\BugTicketingDAL\\Migrations\\20250422133737_m04.cs",
+              "RelativeToolTip": "BugTicketingDAL\\Migrations\\20250422133737_m04.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-21T19:59:49.848Z",
+              "WhenOpened": "2025-04-22T13:37:37.497Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "ProjectConfiguration.cs",
+              "DocumentMoniker": "E:\\Mohamed\\ITI\\ITI-Projects\\ITI-ASP.Net-API-BugTicketing\\BugTicketingDAL\\EntitiesConfiguration\\ProjectConfiguration.cs",
+              "RelativeDocumentMoniker": "BugTicketingDAL\\EntitiesConfiguration\\ProjectConfiguration.cs",
+              "ToolTip": "E:\\Mohamed\\ITI\\ITI-Projects\\ITI-ASP.Net-API-BugTicketing\\BugTicketingDAL\\EntitiesConfiguration\\ProjectConfiguration.cs",
+              "RelativeToolTip": "BugTicketingDAL\\EntitiesConfiguration\\ProjectConfiguration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAACVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-22T13:29:09.197Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BugConfiguration.cs",
+              "DocumentMoniker": "E:\\Mohamed\\ITI\\ITI-Projects\\ITI-ASP.Net-API-BugTicketing\\BugTicketingDAL\\EntitiesConfiguration\\BugConfiguration.cs",
+              "RelativeDocumentMoniker": "BugTicketingDAL\\EntitiesConfiguration\\BugConfiguration.cs",
+              "ToolTip": "E:\\Mohamed\\ITI\\ITI-Projects\\ITI-ASP.Net-API-BugTicketing\\BugTicketingDAL\\EntitiesConfiguration\\BugConfiguration.cs",
+              "RelativeToolTip": "BugTicketingDAL\\EntitiesConfiguration\\BugConfiguration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAABfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-22T13:24:00.923Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Project.cs",
+              "DocumentMoniker": "E:\\Mohamed\\ITI\\ITI-Projects\\ITI-ASP.Net-API-BugTicketing\\BugTicketingDAL\\Models\\Project.cs",
+              "RelativeDocumentMoniker": "BugTicketingDAL\\Models\\Project.cs",
+              "ToolTip": "E:\\Mohamed\\ITI\\ITI-Projects\\ITI-ASP.Net-API-BugTicketing\\BugTicketingDAL\\Models\\Project.cs",
+              "RelativeToolTip": "BugTicketingDAL\\Models\\Project.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-22T13:15:56.963Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "User.cs",
+              "DocumentMoniker": "E:\\Mohamed\\ITI\\ITI-Projects\\ITI-ASP.Net-API-BugTicketing\\BugTicketingDAL\\Models\\User.cs",
+              "RelativeDocumentMoniker": "BugTicketingDAL\\Models\\User.cs",
+              "ToolTip": "E:\\Mohamed\\ITI\\ITI-Projects\\ITI-ASP.Net-API-BugTicketing\\BugTicketingDAL\\Models\\User.cs",
+              "RelativeToolTip": "BugTicketingDAL\\Models\\User.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABEAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-22T12:45:09.739Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "Bug.cs",
               "DocumentMoniker": "E:\\Mohamed\\ITI\\ITI-Projects\\ITI-ASP.Net-API-BugTicketing\\BugTicketingDAL\\Models\\Bug.cs",
               "RelativeDocumentMoniker": "BugTicketingDAL\\Models\\Bug.cs",
               "ToolTip": "E:\\Mohamed\\ITI\\ITI-Projects\\ITI-ASP.Net-API-BugTicketing\\BugTicketingDAL\\Models\\Bug.cs",
               "RelativeToolTip": "BugTicketingDAL\\Models\\Bug.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAWAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-21T19:57:44.863Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "UserBug.cs",
-              "DocumentMoniker": "E:\\Mohamed\\ITI\\ITI-Projects\\ITI-ASP.Net-API-BugTicketing\\BugTicketingDAL\\Models\\UserBug.cs",
-              "RelativeDocumentMoniker": "BugTicketingDAL\\Models\\UserBug.cs",
-              "ToolTip": "E:\\Mohamed\\ITI\\ITI-Projects\\ITI-ASP.Net-API-BugTicketing\\BugTicketingDAL\\Models\\UserBug.cs",
-              "RelativeToolTip": "BugTicketingDAL\\Models\\UserBug.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-21T19:50:48.058Z",
+              "WhenOpened": "2025-04-22T12:45:08.546Z",
               "EditorCaption": ""
             }
           ]

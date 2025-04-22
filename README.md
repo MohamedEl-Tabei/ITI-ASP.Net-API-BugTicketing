@@ -13,6 +13,10 @@ The Bug Ticketing System is a web application that helps teams manage bugs and i
 
 ![ERD](https://i.ibb.co/TBM77dXw/Untitled-Diagram.png)
 
+## Database Diagram
+
+![Database Diagram](https://i.ibb.co/prvfc2JG/Screenshot-2025-04-22-155052.png)
+
 ## API Reference
 
 #### User Management:

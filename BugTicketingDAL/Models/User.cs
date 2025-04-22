@@ -15,6 +15,10 @@ namespace BugTicketingDAL
         public string? Email { get; set; }
         public string? Password { get; set; }
         public virtual string? Name { get; set; }
+        public virtual Project? ManagedProject { get; set; }
         public virtual List<UserBug>? UserBugs { get; set; }
+        public virtual List<UserRole>? UserRoles { get; set; }
+        public virtual List<Attachment>? Attachments { get; set; }
+
     }
 }

@@ -13,5 +13,8 @@ namespace BugTicketingDAL
         public ProjectStatus Status { get; set; }
         public DateTime StartDate { get; set; }
         public DateTime EndDate { get; set; }
+        public Guid ManagerId { get; set; }
+        public virtual List<Bug>? Bugs {  get; set; } 
+        public virtual User? Manager { get; set; }
     }
 }
