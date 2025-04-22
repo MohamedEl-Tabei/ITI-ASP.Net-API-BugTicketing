@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "SSIa44MHPLM3a66IxqaUueIF7Q/3Xx1rOCXBpao9/hc=",
+  "Source": "BugTicketing",
+  "BasePath": "_content/BugTicketing",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

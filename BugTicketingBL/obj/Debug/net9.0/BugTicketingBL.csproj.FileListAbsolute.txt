@@ -1,0 +1,16 @@
+E:\Mohamed\ITI\ITI-Projects\ITI-ASP.Net-API-BugTicketing\BugTicketingBL\bin\Debug\net9.0\BugTicketingBL.deps.json
+E:\Mohamed\ITI\ITI-Projects\ITI-ASP.Net-API-BugTicketing\BugTicketingBL\bin\Debug\net9.0\BugTicketingBL.dll
+E:\Mohamed\ITI\ITI-Projects\ITI-ASP.Net-API-BugTicketing\BugTicketingBL\bin\Debug\net9.0\BugTicketingBL.pdb
+E:\Mohamed\ITI\ITI-Projects\ITI-ASP.Net-API-BugTicketing\BugTicketingBL\bin\Debug\net9.0\BugTicketingDAL.dll
+E:\Mohamed\ITI\ITI-Projects\ITI-ASP.Net-API-BugTicketing\BugTicketingBL\bin\Debug\net9.0\BugTicketingDAL.pdb
+E:\Mohamed\ITI\ITI-Projects\ITI-ASP.Net-API-BugTicketing\BugTicketingBL\obj\Debug\net9.0\BugTicketingBL.csproj.AssemblyReference.cache
+E:\Mohamed\ITI\ITI-Projects\ITI-ASP.Net-API-BugTicketing\BugTicketingBL\obj\Debug\net9.0\BugTicketingBL.GeneratedMSBuildEditorConfig.editorconfig
+E:\Mohamed\ITI\ITI-Projects\ITI-ASP.Net-API-BugTicketing\BugTicketingBL\obj\Debug\net9.0\BugTicketingBL.AssemblyInfoInputs.cache
+E:\Mohamed\ITI\ITI-Projects\ITI-ASP.Net-API-BugTicketing\BugTicketingBL\obj\Debug\net9.0\BugTicketingBL.AssemblyInfo.cs
+E:\Mohamed\ITI\ITI-Projects\ITI-ASP.Net-API-BugTicketing\BugTicketingBL\obj\Debug\net9.0\BugTicketingBL.csproj.CoreCompileInputs.cache
+E:\Mohamed\ITI\ITI-Projects\ITI-ASP.Net-API-BugTicketing\BugTicketingBL\obj\Debug\net9.0\BugTicketingBL.sourcelink.json
+E:\Mohamed\ITI\ITI-Projects\ITI-ASP.Net-API-BugTicketing\BugTicketingBL\obj\Debug\net9.0\BugTicke.0A413279.Up2Date
+E:\Mohamed\ITI\ITI-Projects\ITI-ASP.Net-API-BugTicketing\BugTicketingBL\obj\Debug\net9.0\BugTicketingBL.dll
+E:\Mohamed\ITI\ITI-Projects\ITI-ASP.Net-API-BugTicketing\BugTicketingBL\obj\Debug\net9.0\refint\BugTicketingBL.dll
+E:\Mohamed\ITI\ITI-Projects\ITI-ASP.Net-API-BugTicketing\BugTicketingBL\obj\Debug\net9.0\BugTicketingBL.pdb
+E:\Mohamed\ITI\ITI-Projects\ITI-ASP.Net-API-BugTicketing\BugTicketingBL\obj\Debug\net9.0\ref\BugTicketingBL.dll
