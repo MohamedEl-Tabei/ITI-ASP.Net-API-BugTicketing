@@ -3,6 +3,8 @@ using System.Security.Claims;
 using System.Text;
 using BugTicketingBL.Dtos.Authentication;
 using BugTicketingDAL;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Identity;
@@ -95,5 +97,9 @@ namespace BugTicketing.Controllers
             else
                 return TypedResults.BadRequest(creationResult.Errors.Select(e => e.Description).ToList());
         }
+        [Authorize(AuthenticationSchemes=JwtBearerDefaults.AuthenticationScheme)]
+        [HttpGet]
+        //[Authorize(Policy = Constant.Policy.TesterOnly)]
+        public Ok<String> test() { return TypedResults.Ok("Test"); }
     }
 }

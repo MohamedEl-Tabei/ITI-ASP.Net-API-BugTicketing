@@ -11,6 +11,16 @@
   },
   {
     "ContainingType": "BugTicketing.Controllers.AccountController",
+    "Method": "test",
+    "RelativePath": "api/user",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BugTicketing.Controllers.AccountController",
     "Method": "Login",
     "RelativePath": "api/user/login",
     "HttpMethod": "POST",
