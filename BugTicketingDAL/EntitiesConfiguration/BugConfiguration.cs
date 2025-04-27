@@ -12,9 +12,8 @@ namespace BugTicketingDAL
     {
         public void Configure(EntityTypeBuilder<Bug> builder)
         {
-            builder.Property(b => b.Title).IsRequired();
-            builder.Property(b => b.Description).IsRequired();
-            builder.Property(b => b.Status).IsRequired();
+            builder.Property(b => b.Title).HasMaxLength(100).IsRequired();
+            builder.Property(b => b.Description).HasMaxLength(255).IsRequired();
             builder.HasOne(b => b.Project).WithMany(p => p.Bugs).HasForeignKey(b => b.ProjectId);
         }
     }

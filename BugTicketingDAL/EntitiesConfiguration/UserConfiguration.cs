@@ -12,10 +12,8 @@ namespace BugTicketingDAL
     {
         public void Configure(EntityTypeBuilder<User> builder)
         {
-            builder.Property(u=>u.Email).IsRequired();
-            builder.Property(u=>u.FName).IsRequired();
-            builder.Property(u=>u.LName).IsRequired();
-            builder.Property(u=>u.Password).IsRequired();
+            builder.Ignore(u => u.PhoneNumber);
+            builder.Ignore(u => u.PhoneNumberConfirmed);
         }
     }
 }

@@ -4,14 +4,19 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
+
+#region Default Services
 builder.Services.AddControllers();
-// Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
+#endregion
+
 #region Add DAL Services
 var Services = builder.Services;
 var Configuration = builder.Configuration;
 Services.AddDALServices(Configuration);
 #endregion
+
+
 
 
 var app = builder.Build();
@@ -23,7 +28,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();

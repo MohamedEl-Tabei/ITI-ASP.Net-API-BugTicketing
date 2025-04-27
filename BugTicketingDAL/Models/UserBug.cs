@@ -8,11 +8,11 @@ namespace BugTicketingDAL
 {
     public class UserBug
     {
-        public Guid UserId { get; set; }
+        public string? UserId { get; set; }
         public Guid BugId { get; set; }
         public DateTime AssignedDate { get; set; }
 
-        public virtual User? User { get; set; }
-        public virtual Bug? Bug { get; set; }
+        public User? User { get; set; }
+        public Bug? Bug { get; set; }
     }
 }

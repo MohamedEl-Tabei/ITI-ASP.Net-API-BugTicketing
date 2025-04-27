@@ -6,12 +6,13 @@ using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace BugTicketingDAL.EntitiesConfiguration
+namespace BugTicketingDAL
 {
     public class ProjectConfiguration : IEntityTypeConfiguration<Project>
     {
         public void Configure(EntityTypeBuilder<Project> builder)
         {
+            builder.Property(p => p.Name).IsRequired().HasMaxLength(100);
             builder.HasOne(p => p.Manager).WithOne(m => m.ManagedProject).HasForeignKey<Project>(p => p.ManagerId).OnDelete(DeleteBehavior.Restrict);
         }
     }

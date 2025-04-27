@@ -1,12 +1,44 @@
 [
   {
-    "ContainingType": "BugTicketing.Controllers.User",
+    "ContainingType": "BugTicketing.Controllers.TestController",
     "Method": "test",
-    "RelativePath": "api/User/test",
+    "RelativePath": "api/test",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BugTicketing.Controllers.AccountController",
+    "Method": "Login",
+    "RelativePath": "api/user/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "loginData",
+        "Type": "BugTicketingBL.Dtos.Authentication.DtoLogin",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BugTicketing.Controllers.AccountController",
+    "Method": "Register",
+    "RelativePath": "api/user/register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "registerData",
+        "Type": "BugTicketingBL.Dtos.Authentication.DtoRegister",
+        "IsRequired": true
+      }
+    ],
     "ReturnTypes": []
   }
 ]
