@@ -14,6 +14,7 @@ namespace BugTicketingDAL
         {
             builder.Ignore(u => u.PhoneNumber);
             builder.Ignore(u => u.PhoneNumberConfirmed);
+            builder.HasData(Constant.SeedData.GetUsers());
         }
     }
 }

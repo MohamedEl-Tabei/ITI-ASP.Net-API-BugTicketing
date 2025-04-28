@@ -9,8 +9,9 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace BugTicketingDAL.EntitiesConfiguration
 {
-    public class IdentityRoleConfiguration : IEntityTypeConfiguration<IdentityRole>
+    public class UserRoleConfiguration : IEntityTypeConfiguration<IdentityUserRole<string>>
     {
-        public void Configure(EntityTypeBuilder<IdentityRole> builder) => builder.HasData(Constant.SeedData.GetRoles());
+        public void Configure(EntityTypeBuilder<IdentityUserRole<string>> builder) => builder.HasData(Constant.SeedData.GetUserRoles());
+
     }
 }

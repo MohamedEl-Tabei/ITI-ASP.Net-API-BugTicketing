@@ -15,7 +15,7 @@ The Bug Ticketing System is a web application that helps teams manage bugs and i
 
 ## Database Diagram
 
-![Database Diagram](https://i.ibb.co/prvfc2JG/Screenshot-2025-04-22-155052.png)
+![Database Diagram](https://i.ibb.co/c4DtHyy/Screenshot-2025-04-28-234151.png)
 
 ## API Reference
 
@@ -38,3 +38,12 @@ The Bug Ticketing System is a web application that helps teams manage bugs and i
 To run this project, you will need to add the following environment variables
 
 `ConnectionStrings__DefaultConnection`
+`JWT__SecretKey`
+
+## Tech Stack
+
+- ASP .Net Core API
+- SQL Server
+- Entity Framework
+- JWT
+- LINQ

@@ -4,6 +4,7 @@ using BugTicketingDAL;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BugTicketingDAL.Migrations
 {
     [DbContext(typeof(BugTicketingContext))]
-    partial class BugTicketingContextModelSnapshot : ModelSnapshot
+    [Migration("20250428203500_m-04")]
+    partial class m04
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -51,7 +54,7 @@ namespace BugTicketingDAL.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("Attachments", (string)null);
+                    b.ToTable("Attachments");
                 });
 
             modelBuilder.Entity("BugTicketingDAL.Bug", b =>
@@ -80,7 +83,7 @@ namespace BugTicketingDAL.Migrations
 
                     b.HasIndex("ProjectId");
 
-                    b.ToTable("Bugs", (string)null);
+                    b.ToTable("Bugs");
                 });
 
             modelBuilder.Entity("BugTicketingDAL.Project", b =>
@@ -112,7 +115,7 @@ namespace BugTicketingDAL.Migrations
                         .IsUnique()
                         .HasFilter("[ManagerId] IS NOT NULL");
 
-                    b.ToTable("Projects", (string)null);
+                    b.ToTable("Projects");
                 });
 
             modelBuilder.Entity("BugTicketingDAL.User", b =>
@@ -281,7 +284,7 @@ namespace BugTicketingDAL.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("UserBugs", (string)null);
+                    b.ToTable("UserBugs");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
@@ -416,43 +419,6 @@ namespace BugTicketingDAL.Migrations
                     b.HasIndex("RoleId");
 
                     b.ToTable("AspNetUserRoles", (string)null);
-
-                    b.HasData(
-                        new
-                        {
-                            UserId = "711a4a71-6a79-4c67-a5ff-7d38d6254a90",
-                            RoleId = "4179d4b9-6aa8-4e27-8293-9fd69b331e8a"
-                        },
-                        new
-                        {
-                            UserId = "a23bb53a-7c52-4f13-8000-188ad242f04e",
-                            RoleId = "4179d4b9-6aa8-4e27-8293-9fd69b331e8a"
-                        },
-                        new
-                        {
-                            UserId = "7a8bf7b6-4979-4729-bd78-80c1f39aad34",
-                            RoleId = "4179d4b9-6aa8-4e27-8293-9fd69b331e8a"
-                        },
-                        new
-                        {
-                            UserId = "7a8bf7b6-4979-4729-bd78-80c1f39aad34",
-                            RoleId = "bcd832ec-cae3-4b7b-baa6-f9f02b9858c0"
-                        },
-                        new
-                        {
-                            UserId = "981fec6c-2d2a-4843-99bf-a5f9d4baf85b",
-                            RoleId = "bcd832ec-cae3-4b7b-baa6-f9f02b9858c0"
-                        },
-                        new
-                        {
-                            UserId = "8f4b2288-bff8-4030-927e-e32bfdc9f90f",
-                            RoleId = "0b172061-cc4b-416d-8559-4dcb240cd012"
-                        },
-                        new
-                        {
-                            UserId = "e6c01d4f-bc6a-4fc3-afe3-62de02997dcf",
-                            RoleId = "0b172061-cc4b-416d-8559-4dcb240cd012"
-                        });
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<string>", b =>

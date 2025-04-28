@@ -4,6 +4,7 @@ using BugTicketingDAL;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BugTicketingDAL.Migrations
 {
     [DbContext(typeof(BugTicketingContext))]
-    partial class BugTicketingContextModelSnapshot : ModelSnapshot
+    [Migration("20250428210856_m-05")]
+    partial class m05
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -51,7 +54,7 @@ namespace BugTicketingDAL.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("Attachments", (string)null);
+                    b.ToTable("Attachments");
                 });
 
             modelBuilder.Entity("BugTicketingDAL.Bug", b =>
@@ -80,7 +83,7 @@ namespace BugTicketingDAL.Migrations
 
                     b.HasIndex("ProjectId");
 
-                    b.ToTable("Bugs", (string)null);
+                    b.ToTable("Bugs");
                 });
 
             modelBuilder.Entity("BugTicketingDAL.Project", b =>
@@ -112,7 +115,7 @@ namespace BugTicketingDAL.Migrations
                         .IsUnique()
                         .HasFilter("[ManagerId] IS NOT NULL");
 
-                    b.ToTable("Projects", (string)null);
+                    b.ToTable("Projects");
                 });
 
             modelBuilder.Entity("BugTicketingDAL.User", b =>
@@ -281,7 +284,7 @@ namespace BugTicketingDAL.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("UserBugs", (string)null);
+                    b.ToTable("UserBugs");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>

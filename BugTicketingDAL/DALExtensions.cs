@@ -43,9 +43,9 @@ namespace BugTicketingDAL
             #region Authorization
             services.AddAuthorization(opions =>
             {
-                opions.AddPolicy(Constant.Policy.ManagerOnly, builder => builder.RequireClaim(ClaimTypes.Role, "Manager"));
-                opions.AddPolicy(Constant.Policy.TesterOnly, builder => builder.RequireClaim(ClaimTypes.Role, "Tester").RequireClaim(ClaimTypes.NameIdentifier));
-                opions.AddPolicy(Constant.Policy.DevelopreOnly, builder => builder.RequireClaim(ClaimTypes.Role, "Developer"));
+                opions.AddPolicy(Constant.Policy.ManagerOnly, builder => builder.RequireClaim(ClaimTypes.Role, Constant.Role.Manager).RequireClaim(ClaimTypes.NameIdentifier));
+                opions.AddPolicy(Constant.Policy.TesterOnly, builder => builder.RequireClaim(ClaimTypes.Role, Constant.Role.Tester).RequireClaim(ClaimTypes.NameIdentifier));
+                opions.AddPolicy(Constant.Policy.DevelopreOnly, builder => builder.RequireClaim(ClaimTypes.Role, Constant.Role.Developer).RequireClaim(ClaimTypes.NameIdentifier));
             });
             #endregion
             #region DbContext

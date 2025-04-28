@@ -14,7 +14,7 @@ using Microsoft.IdentityModel.Tokens;
 
 namespace BugTicketing.Controllers
 {
-    [Route("api/user")]
+    [Route("api/users")]
     [ApiController]
     public class AccountController : ControllerBase
     {
@@ -39,7 +39,16 @@ namespace BugTicketing.Controllers
             if (!validPassword) return TypedResults.Unauthorized();
             #endregion
             #region Generate Token
-            var claims = await _userManager.GetClaimsAsync(user);
+
+            var userRoles = await _userManager.GetRolesAsync(user);
+            #region Add Claims
+            var claims = new List<Claim> {
+                        new (ClaimTypes.NameIdentifier,user.Id),
+                    };
+            for (var i = 0; i < userRoles.Count; i++)
+                claims.Add(new(ClaimTypes.Role, userRoles[i]));
+            await _userManager.AddClaimsAsync(user, claims);
+            #endregion
             var secretKey = _configuration.GetValue<string>("JWT:SecretKey");
             var secretKeyInBytes = Encoding.UTF8.GetBytes(secretKey);
             var key = new SymmetricSecurityKey(secretKeyInBytes);
@@ -60,10 +69,10 @@ namespace BugTicketing.Controllers
             #region Check Role
             if (registerData.Roles.Count == 0)
                 return TypedResults.BadRequest("Invalid role. it must be at least one of (Manager, Developer, Tester).");
-            var Roles = new List<string>() { "Manager", "Tester", "Developer" };
+
             for (var i = 0; i < registerData.Roles.Count; i++)
             {
-                if (!Roles.Contains(registerData.Roles[i]))
+                if (!Constant.Role.Roles.Contains(registerData.Roles[i]))
                     return TypedResults.BadRequest("Invalid role. it must be at least one of (Manager, Developer, Tester).");
             }
             #endregion
@@ -79,17 +88,8 @@ namespace BugTicketing.Controllers
             if (creationResult.Succeeded)
             {
                 var addRoleResult = await _userManager.AddToRolesAsync(newUser, registerData.Roles);
-
                 if (addRoleResult.Succeeded)
                 {
-                    #region Add Claims
-                    var claims = new List<Claim> {
-                        new (ClaimTypes.NameIdentifier,newUser.Id),
-                    };
-                    for (var i = 0; i < registerData.Roles.Count; i++)
-                        claims.Add(new(ClaimTypes.Role, registerData.Roles[i]));
-                    await _userManager.AddClaimsAsync(newUser, claims);
-                    #endregion
                     return TypedResults.Ok("Success");
                 }
                 return TypedResults.BadRequest(creationResult.Errors.Select(e => e.Description).ToList());
@@ -97,9 +97,6 @@ namespace BugTicketing.Controllers
             else
                 return TypedResults.BadRequest(creationResult.Errors.Select(e => e.Description).ToList());
         }
-        [Authorize(AuthenticationSchemes=JwtBearerDefaults.AuthenticationScheme)]
-        [HttpGet]
-        //[Authorize(Policy = Constant.Policy.TesterOnly)]
-        public Ok<String> test() { return TypedResults.Ok("Test"); }
+
     }
 }
