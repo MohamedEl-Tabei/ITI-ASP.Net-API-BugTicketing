@@ -36,10 +36,10 @@ namespace BugTicketing.Controllers
             var result = await _managerAttachment.GetAttachmentsForBug(id);
             return TypedResults.Ok(result);
         }
-        [HttpDelete("{bugId}/attachments/{userId}")]
-        public Ok<string> RemoveUserfromBug(Guid attachmetnId, Guid userId)
+        [HttpDelete("{bugId}/attachments/{attachmetnId}")]
+        public Ok<string> RemoveUserfromBug(Guid attachmetnId, Guid bugId)
         {
-            _managerAttachment.Delete(userId, attachmetnId);
+            _managerAttachment.Delete(attachmetnId, bugId);
             return TypedResults.Ok("deleted");
         }
     }

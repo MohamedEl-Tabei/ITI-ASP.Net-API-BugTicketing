@@ -96,7 +96,7 @@
   {
     "ContainingType": "BugTicketing.Controllers.AttachmentController",
     "Method": "RemoveUserfromBug",
-    "RelativePath": "api/bugs/{bugId}/attachments/{userId}",
+    "RelativePath": "api/bugs/{bugId}/attachments/{attachmetnId}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -104,16 +104,11 @@
       {
         "Name": "attachmetnId",
         "Type": "System.Guid",
-        "IsRequired": false
-      },
-      {
-        "Name": "userId",
-        "Type": "System.Guid",
         "IsRequired": true
       },
       {
         "Name": "bugId",
-        "Type": "",
+        "Type": "System.Guid",
         "IsRequired": true
       }
     ],

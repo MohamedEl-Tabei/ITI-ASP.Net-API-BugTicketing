@@ -15,7 +15,9 @@ namespace BugTicketingDAL.Repositories
         public void Delete(Guid attachmentId, Guid bugId)
         {
             var attachment = _context.Attachments.FirstOrDefault(ub => ub.Id == attachmentId && ub.BugId == bugId);
+            if (attachment is null) return;
             _context.Remove(attachment);
+
         }
         public async Task<List<Attachment>> GetAttachmentsByBugIdAsync(Guid bugId)
         {
