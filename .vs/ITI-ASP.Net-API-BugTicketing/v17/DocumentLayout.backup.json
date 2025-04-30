@@ -42,8 +42,7 @@
               "RelativeToolTip": "BugTicketing\\Controllers\\AttachmentController.cs",
               "ViewState": "AgIAABYAAAAAAAAAAAAQwCkAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-30T21:41:40.063Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-30T21:41:40.063Z"
             },
             {
               "$type": "Document",
@@ -68,8 +67,7 @@
               "RelativeToolTip": "BugTicketingDAL\\Repositories\\Attachment\\IRepositoryAttachment.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-30T21:38:58.967Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-30T21:38:58.967Z"
             },
             {
               "$type": "Document",
@@ -81,8 +79,7 @@
               "RelativeToolTip": "BugTicketingBL\\Managers\\Attachment\\ManagerAttachment.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAABcAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-30T21:38:33.303Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-30T21:38:33.303Z"
             },
             {
               "$type": "Document",
@@ -94,8 +91,7 @@
               "RelativeToolTip": "BugTicketingBL\\BLExtensions.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-30T21:38:28.042Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-30T21:38:28.042Z"
             }
           ]
         }

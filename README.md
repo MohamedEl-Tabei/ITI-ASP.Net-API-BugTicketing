@@ -15,7 +15,7 @@ The Bug Ticketing System is a web application that helps teams manage bugs and i
 
 ## Database Diagram
 
-![Database Diagram](https://i.ibb.co/c4DtHyy/Screenshot-2025-04-28-234151.png)
+![Database Diagram](https://i.ibb.co/LXjS1KGD/1.png)
 
 ## API Reference
 
@@ -66,24 +66,47 @@ The Bug Ticketing System is a web application that helps teams manage bugs and i
 ```http
   GET /api/bugs
 ```
+
 - Get Bug Details: View detailed info on a specific bug.
 
 ```http
   GET /api/bugs/:id
 ```
-#### User-Bug Relationships: 
 
-- Assign User to Bug:**Managers only** can assign a user to a bug and assignees must be **Developer only**. 
+#### User-Bug Relationships:
+
+- Assign User to Bug:**Managers only** can assign a user to a bug and assignees must be **Developer only**.
 
 ```http
-  POST /api/bugs/:id/assignees 
+  POST /api/bugs/:id/assignees
 ```
-#### File Management: 
+
+- Remove User from Bug: **Managers only** can unassign a user from a bug
+
+```http
+  DELETE /api/bugs/:id/assignees/:userId
+```
+
+#### File Management:
+
 - Upload Attachment:**Developers only** can add an attachment to a bug.
 
 ```http
   POST /api/bugs/:id/attachments
 ```
+
+- Get Attachments for Bug: Retrieve all attachments for a bug.
+
+```http
+  GET /api/bugs/:id/attachments
+```
+
+- Delete Attachment: Remove an attachment from a bug.
+
+```http
+  DELETE /api/bugs/:id/attachments/:attachmentId
+```
+
 ## Environment Variables
 
 To run this project, you will need to add the following environment variables
