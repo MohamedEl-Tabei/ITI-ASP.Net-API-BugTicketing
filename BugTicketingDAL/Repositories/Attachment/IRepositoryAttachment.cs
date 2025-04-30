@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BugTicketingDAL
+namespace BugTicketingDAL.Repositories
 {
-    public enum AttachmentType
+    public interface IRepositoryAttachment : IRepository<Attachment>
     {
-        Image,File
     }
 }

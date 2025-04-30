@@ -8,6 +8,6 @@ namespace BugTicketingDAL
 {
     public enum ProjectStatus
     {
-        Finished,InProgress,NotStarted
+        Finished=1,NotFinished=-1
     }
 }

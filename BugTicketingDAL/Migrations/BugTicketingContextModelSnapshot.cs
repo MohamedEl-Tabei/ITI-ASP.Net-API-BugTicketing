@@ -51,12 +51,12 @@ namespace BugTicketingDAL.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("Attachments", (string)null);
+                    b.ToTable("Attachments");
                 });
 
             modelBuilder.Entity("BugTicketingDAL.Bug", b =>
                 {
-                    b.Property<Guid>("id")
+                    b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
@@ -76,11 +76,37 @@ namespace BugTicketingDAL.Migrations
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
 
-                    b.HasKey("id");
+                    b.HasKey("Id");
 
                     b.HasIndex("ProjectId");
 
-                    b.ToTable("Bugs", (string)null);
+                    b.ToTable("Bugs");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = new Guid("aaaa1111-bbbb-2222-cccc-333333333333"),
+                            Description = "When clicking the login button, nothing happens.",
+                            ProjectId = new Guid("11111111-aaaa-4bbb-cccc-111111111111"),
+                            Status = -1,
+                            Title = "Login button not working"
+                        },
+                        new
+                        {
+                            Id = new Guid("bbbb2222-cccc-3333-dddd-444444444444"),
+                            Description = "Timeout occurs when processing Visa payment.",
+                            ProjectId = new Guid("22222222-bbbb-4ccc-dddd-222222222222"),
+                            Status = -1,
+                            Title = "Payment gateway timeout"
+                        },
+                        new
+                        {
+                            Id = new Guid("cccc3333-dddd-4444-eeee-555555555555"),
+                            Description = "Profile images are not displayed on the HR system.",
+                            ProjectId = new Guid("33333333-cccc-4ddd-eeee-333333333333"),
+                            Status = -1,
+                            Title = "Employee profile image not loading"
+                        });
                 });
 
             modelBuilder.Entity("BugTicketingDAL.Project", b =>
@@ -108,11 +134,38 @@ namespace BugTicketingDAL.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("ManagerId")
-                        .IsUnique()
-                        .HasFilter("[ManagerId] IS NOT NULL");
+                    b.HasIndex("ManagerId");
 
-                    b.ToTable("Projects", (string)null);
+                    b.ToTable("Projects");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = new Guid("11111111-aaaa-4bbb-cccc-111111111111"),
+                            EndDate = new DateTime(2024, 12, 31, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            ManagerId = "e6c01d4f-bc6a-4fc3-afe3-62de02997dcf",
+                            Name = "Bug Tracking System",
+                            StartDate = new DateTime(2024, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Status = -1
+                        },
+                        new
+                        {
+                            Id = new Guid("22222222-bbbb-4ccc-dddd-222222222222"),
+                            EndDate = new DateTime(2025, 6, 30, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            ManagerId = "e6c01d4f-bc6a-4fc3-afe3-62de02997dcf",
+                            Name = "E-Commerce Platform",
+                            StartDate = new DateTime(2025, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Status = -1
+                        },
+                        new
+                        {
+                            Id = new Guid("33333333-cccc-4ddd-eeee-333333333333"),
+                            EndDate = new DateTime(2023, 12, 31, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            ManagerId = "8f4b2288-bff8-4030-927e-e32bfdc9f90f",
+                            Name = "HR System",
+                            StartDate = new DateTime(2023, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Status = -1
+                        });
                 });
 
             modelBuilder.Entity("BugTicketingDAL.User", b =>
@@ -281,7 +334,7 @@ namespace BugTicketingDAL.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("UserBugs", (string)null);
+                    b.ToTable("UserBugs");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
@@ -505,9 +558,9 @@ namespace BugTicketingDAL.Migrations
             modelBuilder.Entity("BugTicketingDAL.Project", b =>
                 {
                     b.HasOne("BugTicketingDAL.User", "Manager")
-                        .WithOne("ManagedProject")
-                        .HasForeignKey("BugTicketingDAL.Project", "ManagerId")
-                        .OnDelete(DeleteBehavior.Restrict);
+                        .WithMany("ManagedProjects")
+                        .HasForeignKey("ManagerId")
+                        .OnDelete(DeleteBehavior.SetNull);
 
                     b.Navigation("Manager");
                 });
@@ -598,7 +651,7 @@ namespace BugTicketingDAL.Migrations
                 {
                     b.Navigation("Attachments");
 
-                    b.Navigation("ManagedProject");
+                    b.Navigation("ManagedProjects");
 
                     b.Navigation("UserBugs");
                 });

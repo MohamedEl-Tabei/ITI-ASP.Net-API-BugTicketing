@@ -14,5 +14,10 @@ namespace BugTicketingDAL
 
         public User? User { get; set; }
         public Bug? Bug { get; set; }
+
+        public UserBug()
+        {
+            AssignedDate = DateTime.Now;
+        }
     }
 }

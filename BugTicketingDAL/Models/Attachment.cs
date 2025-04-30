@@ -10,12 +10,16 @@ namespace BugTicketingDAL
     {
         public Guid Id { get; set; }
         public string? Title { get; set; }
-        public AttachmentType Type { get; set; }
         public DateTime UploadedAt { get; set; }
         public string? UserId { get; set; }
         public Guid BugId { get; set; }
+        public Byte[]? file { get; set; }
 
         public User? User { get; set; }
         public Bug? Bug { get; set; }
+        public Attachment()
+        {
+            UploadedAt = DateTime.Now;
+        }
     }
 }

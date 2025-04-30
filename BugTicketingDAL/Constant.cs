@@ -50,7 +50,19 @@ namespace BugTicketingDAL
                 public const string Developer = "4179d4b9-6aa8-4e27-8293-9fd69b331e8a";
                 public const string Tester = "bcd832ec-cae3-4b7b-baa6-f9f02b9858c0";
             }
+            private static class ProjectIds
+            {
+                public static readonly Guid BugTrackingSystem = Guid.Parse("11111111-aaaa-4bbb-cccc-111111111111");
+                public static readonly Guid ECommercePlatform = Guid.Parse("22222222-bbbb-4ccc-dddd-222222222222");
+                public static readonly Guid HRSystem = Guid.Parse("33333333-cccc-4ddd-eeee-333333333333");
+            }
 
+            private static class BugIds
+            {
+                public static Guid Bug1 = new("aaaa1111-bbbb-2222-cccc-333333333333");
+                public static Guid Bug2 = new("bbbb2222-cccc-3333-dddd-444444444444");
+                public static Guid Bug3 = new("cccc3333-dddd-4444-eeee-555555555555");
+            }
 
             #region Users
             public static List<User> GetUsers()
@@ -178,6 +190,106 @@ namespace BugTicketingDAL
                 };
                 return usersRoles;
             }
+            #endregion
+            #region Projects
+            public static List<Project> GetProjects()
+            {
+                return new List<Project>
+                {
+                    new Project
+                    {
+                        Id =ProjectIds.BugTrackingSystem,
+                        Name = "Bug Tracking System",
+                        Status = ProjectStatus.NotFinished,
+                        StartDate = new DateTime(2024, 1, 1),
+                        EndDate = new DateTime(2024, 12, 31),
+                        ManagerId = UserIds.AlaaEisa
+                    },
+                    new Project
+                    {
+                        Id = ProjectIds.ECommercePlatform,
+                        Name = "E-Commerce Platform",
+                        Status = ProjectStatus.NotFinished,
+                        StartDate = new DateTime(2025, 1, 1),
+                        EndDate = new DateTime(2025, 6, 30),
+                        ManagerId = UserIds.AlaaEisa
+                    },
+                    new Project
+                    {
+                        Id = ProjectIds.HRSystem,
+                        Name = "HR System",
+                        Status = ProjectStatus.NotFinished,
+                        StartDate = new DateTime(2023, 1, 1),
+                        EndDate = new DateTime(2023, 12, 31),
+                        ManagerId = UserIds.BasemAtia
+                    }
+                };
+            }
+            #endregion
+            #region Bugs
+            public static List<Bug> GetBugs()
+            {
+                return new List<Bug>
+                {
+                    new Bug
+                    {
+                        Id = BugIds.Bug1,
+                        Title = "Login button not working",
+                        Description = "When clicking the login button, nothing happens.",
+                        Status = BugStatus.Unsolved,
+                        ProjectId = ProjectIds.BugTrackingSystem
+                    },
+                    new Bug
+                    {
+                        Id = BugIds.Bug2,
+                        Title = "Payment gateway timeout",
+                        Description = "Timeout occurs when processing Visa payment.",
+                        Status = BugStatus.Unsolved,
+                        ProjectId = ProjectIds.ECommercePlatform
+                    },
+                    new Bug
+                    {
+                        Id = BugIds.Bug3,
+                        Title = "Employee profile image not loading",
+                        Description = "Profile images are not displayed on the HR system.",
+                        Status = BugStatus.Unsolved,
+                        ProjectId = ProjectIds.HRSystem
+                    }
+                };
+            }
+            #endregion
+            #region UserBug
+            public static List<UserBug> GetUserBugs()
+            {
+                return new List<UserBug>
+                {
+                    new UserBug
+                    {
+                        UserId = UserIds.KarimHelmy,
+                        BugId = BugIds.Bug1,
+                        AssignedDate = new DateTime(2024, 4, 1)
+                    },
+                    new UserBug
+                    {
+                        UserId = UserIds.MohamedEltabei,
+                        BugId = BugIds.Bug1,
+                        AssignedDate = new DateTime(2024, 4, 2)
+                    },
+                    new UserBug
+                    {
+                        UserId = UserIds.HaniAbdo,
+                        BugId = BugIds.Bug2,
+                        AssignedDate = new DateTime(2024, 4, 5)
+                    },
+                    new UserBug
+                    {
+                        UserId = UserIds.MohamedEltabei,
+                        BugId = BugIds.Bug3,
+                        AssignedDate = new DateTime(2024, 4, 7)
+                    }
+                };
+            }
+
             #endregion
         }
         #endregion

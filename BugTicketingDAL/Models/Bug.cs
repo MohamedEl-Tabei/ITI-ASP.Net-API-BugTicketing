@@ -8,7 +8,7 @@ namespace BugTicketingDAL
 {
     public class Bug
     {
-        public Guid id { get; set; }
+        public Guid Id { get; set; }
         public string? Title { get; set; }
         public string? Description { get; set; }
         public BugStatus Status { get; set; }

@@ -8,6 +8,6 @@ namespace BugTicketingDAL
 {
     public enum BugStatus
     {
-        Solved,Unsolved
+        Solved=1,Unsolved=-1
     }
 }

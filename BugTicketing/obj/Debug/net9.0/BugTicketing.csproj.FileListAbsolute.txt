@@ -175,3 +175,5 @@ E:\Mohamed\ITI\ITI-Projects\ITI-ASP.Net-API-BugTicketing\BugTicketing\bin\Debug\
 E:\Mohamed\ITI\ITI-Projects\ITI-ASP.Net-API-BugTicketing\BugTicketing\bin\Debug\net9.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 E:\Mohamed\ITI\ITI-Projects\ITI-ASP.Net-API-BugTicketing\BugTicketing\bin\Debug\net9.0\Microsoft.Extensions.Identity.Core.dll
 E:\Mohamed\ITI\ITI-Projects\ITI-ASP.Net-API-BugTicketing\BugTicketing\bin\Debug\net9.0\Microsoft.Extensions.Identity.Stores.dll
+E:\Mohamed\ITI\ITI-Projects\ITI-ASP.Net-API-BugTicketing\BugTicketing\bin\Debug\net9.0\FluentValidation.dll
+E:\Mohamed\ITI\ITI-Projects\ITI-ASP.Net-API-BugTicketing\BugTicketing\bin\Debug\net9.0\FluentValidation.DependencyInjectionExtensions.dll

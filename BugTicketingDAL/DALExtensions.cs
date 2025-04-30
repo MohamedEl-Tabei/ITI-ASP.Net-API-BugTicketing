@@ -4,6 +4,7 @@ using System.Linq;
 using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
+using BugTicketingDAL.Repositories;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
@@ -18,6 +19,13 @@ namespace BugTicketingDAL
     {
         public static void AddDALServices(this IServiceCollection services, IConfiguration configuration)
         {
+            #region Depandancy Injection for Repositories & UnitOfWork
+            services.AddScoped<IUnitOfWork, UnitOfWork>();
+            services.AddScoped<IRepositoryProject, RepositoryProject>();
+            services.AddScoped<IRepositoryBug, RepositoryBug>();
+            services.AddScoped<IRepositoryUserBug, RepositoryUserBug>();
+            services.AddScoped<IRepositoryAttachment, RepositoryAttachment>();
+            #endregion
             #region Identity
             services.AddIdentity<User, IdentityRole>(options =>
             {
@@ -51,6 +59,7 @@ namespace BugTicketingDAL
             #region DbContext
             services.AddDbContext<BugTicketingContext>(options => options.UseSqlServer(configuration.GetConnectionString("DefaultConnection")));
             #endregion
+
         }
     }
 }

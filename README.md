@@ -33,6 +33,57 @@ The Bug Ticketing System is a web application that helps teams manage bugs and i
   POST /api/users/login
 ```
 
+#### Project Management
+
+- Create Project: **Managers only** can add a new project.
+
+```http
+ POST /api/projects
+```
+
+- Get All Projects: List all projects.
+
+```http
+ GET /api/projects
+```
+
+- Get Project Details: View specific project information and bugs.
+
+```http
+ GET /api/projects/:id
+```
+
+#### Bug Management
+
+- Create Bug: **Tester only** can report a new bug.
+
+```http
+  POST /api/bugs
+```
+
+- Get All Bugs: List all bugs.
+
+```http
+  GET /api/bugs
+```
+- Get Bug Details: View detailed info on a specific bug.
+
+```http
+  GET /api/bugs/:id
+```
+#### User-Bug Relationships: 
+
+- Assign User to Bug:**Managers only** can assign a user to a bug and assignees must be **Developer only**. 
+
+```http
+  POST /api/bugs/:id/assignees 
+```
+#### File Management: 
+- Upload Attachment:**Developers only** can add an attachment to a bug.
+
+```http
+  POST /api/bugs/:id/attachments
+```
 ## Environment Variables
 
 To run this project, you will need to add the following environment variables
@@ -47,3 +98,4 @@ To run this project, you will need to add the following environment variables
 - Entity Framework
 - JWT
 - LINQ
+- FluentValidation

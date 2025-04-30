@@ -15,6 +15,7 @@ namespace BugTicketingDAL
             builder.Property(b => b.Title).HasMaxLength(100).IsRequired();
             builder.Property(b => b.Description).HasMaxLength(255).IsRequired();
             builder.HasOne(b => b.Project).WithMany(p => p.Bugs).HasForeignKey(b => b.ProjectId);
+            builder.HasData(Constant.SeedData.GetBugs());
         }
     }
 }

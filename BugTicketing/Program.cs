@@ -1,4 +1,7 @@
+using BugTicketing.Validators;
+using BugTicketingBL;
 using BugTicketingDAL;
+using FluentValidation;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,15 +13,15 @@ builder.Services.AddControllers();
 builder.Services.AddOpenApi();
 #endregion
 
-#region Add DAL Services
+#region Add DAL & BL Services
 var Services = builder.Services;
 var Configuration = builder.Configuration;
 Services.AddDALServices(Configuration);
+Services.AddBLExtensions();
 #endregion
 
 
-
-
+Services.AddValidatorsFromAssembly(typeof(ValidatorCreateDtoProject).Assembly);
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

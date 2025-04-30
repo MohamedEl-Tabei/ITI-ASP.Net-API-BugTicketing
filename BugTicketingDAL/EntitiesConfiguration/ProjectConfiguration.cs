@@ -13,7 +13,8 @@ namespace BugTicketingDAL
         public void Configure(EntityTypeBuilder<Project> builder)
         {
             builder.Property(p => p.Name).IsRequired().HasMaxLength(100);
-            builder.HasOne(p => p.Manager).WithOne(m => m.ManagedProject).HasForeignKey<Project>(p => p.ManagerId).OnDelete(DeleteBehavior.Restrict);
+            builder.HasOne(p => p.Manager).WithMany(m => m.ManagedProjects).OnDelete(DeleteBehavior.SetNull);
+            builder.HasData(Constant.SeedData.GetProjects());
         }
     }
 }

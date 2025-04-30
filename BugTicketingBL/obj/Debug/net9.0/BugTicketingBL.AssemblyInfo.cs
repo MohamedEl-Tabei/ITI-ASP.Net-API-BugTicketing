@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BugTicketingBL")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dc65218e80d7b70c8c16081b51ade2c6c716d8e8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+61ca437a9732c35bd9bf82facaa22b3585e46d15")]
 [assembly: System.Reflection.AssemblyProductAttribute("BugTicketingBL")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BugTicketingBL")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

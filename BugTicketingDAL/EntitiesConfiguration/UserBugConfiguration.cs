@@ -13,8 +13,9 @@ namespace BugTicketingDAL
         public void Configure(EntityTypeBuilder<UserBug> builder)
         {
             builder.HasKey(ub => new { ub.BugId, ub.UserId });
-            builder.HasOne(ub=>ub.User).WithMany(u=>u.UserBugs).HasForeignKey(u=>u.UserId);
-            builder.HasOne(ub=>ub.Bug).WithMany(b=>b.UserBugs).HasForeignKey(b=>b.BugId);
+            builder.HasOne(ub => ub.User).WithMany(u => u.UserBugs).HasForeignKey(u => u.UserId);
+            builder.HasOne(ub => ub.Bug).WithMany(b => b.UserBugs).HasForeignKey(b => b.BugId);
+            builder.HasData(Constant.SeedData.GetUserBugs());
         }
     }
 }

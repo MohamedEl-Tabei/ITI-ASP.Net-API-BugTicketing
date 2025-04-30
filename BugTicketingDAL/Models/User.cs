@@ -10,7 +10,7 @@ namespace BugTicketingDAL
 {
     public class User : IdentityUser
     {
-        public Project? ManagedProject { get; set; }
+        public List<Project>? ManagedProjects{ get; set; }
         public List<UserBug>? UserBugs { get; set; }
         public List<Attachment>? Attachments { get; set; }
 
