@@ -8,5 +8,7 @@ namespace BugTicketingDAL.Repositories
 {
     public interface IRepositoryAttachment : IRepository<Attachment>
     {
+        public void Delete(Guid attachmentId, Guid bugId);
+        public Task<List<Attachment>> GetAttachmentsByBugIdAsync(Guid bugId);
     }
 }

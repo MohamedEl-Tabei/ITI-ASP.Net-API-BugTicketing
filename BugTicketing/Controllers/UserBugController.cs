@@ -33,5 +33,11 @@ namespace BugTicketing.Controllers
 
             return TypedResults.Created();
         }
+        [HttpDelete("{bugId}/assignees/{userId}")]
+        public Ok<string> RemoveUserfromBug(Guid bugId, string userId)
+        {
+            _managerUserBug.Delete(userId, bugId);
+            return TypedResults.Ok("deleted");
+        }
     }
 }

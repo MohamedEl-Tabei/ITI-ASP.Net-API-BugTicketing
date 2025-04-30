@@ -11,5 +11,7 @@ namespace BugTicketingBL.Managers
         public Task CreateAsync(Guid bugId, string userId);
         public Task<bool> IsValidBugAsync(Guid bugId);
         public Task<Boolean> IsDeveloperAsync(string userId);
+        public void Delete(string userId, Guid bugId);
+
     }
 }

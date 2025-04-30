@@ -14,6 +14,7 @@ namespace BugTicketingDAL
         public IRepositoryUserBug _repoUserBug { get; }
         public IRepositoryAttachment _repoAttachment { get; }
 
+        public int SaveChanges();
         public Task<int> SaveChangesAsync();
     }
 }

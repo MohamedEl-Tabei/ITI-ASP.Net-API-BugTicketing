@@ -4,7 +4,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using BugTicketingBL.Managers;
-using BugTicketingBL.Managers.Attachment;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace BugTicketingBL

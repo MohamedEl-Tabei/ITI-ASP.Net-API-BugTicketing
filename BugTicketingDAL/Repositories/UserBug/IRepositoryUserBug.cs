@@ -8,5 +8,6 @@ namespace BugTicketingDAL.Repositories
 {
     public interface IRepositoryUserBug : IRepository<UserBug>
     {
+        public void Delete(string userId, Guid bugId);
     }
 }

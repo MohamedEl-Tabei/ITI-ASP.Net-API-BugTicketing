@@ -14,15 +14,17 @@ namespace BugTicketingDAL
         public IRepositoryAttachment _repoAttachment { get; }
         public IRepositoryUserBug _repoUserBug { get; }
         public IRepositoryBug _repoBug { get; }
-        public UnitOfWork(BugTicketingContext context, IRepositoryProject repositoryProject, IRepositoryBug repositoryBug, IRepositoryUserBug repoUserBug)
+        public UnitOfWork(BugTicketingContext context, IRepositoryProject repositoryProject, IRepositoryBug repositoryBug, IRepositoryUserBug repoUserBug, IRepositoryAttachment repositoryAttachment)
         {
             _context = context;
             _repoProject = repositoryProject;
             _repoBug = repositoryBug;
             _repoUserBug = repoUserBug;
+            _repoAttachment = repositoryAttachment;
         }
 
         public async Task<int> SaveChangesAsync() => await _context.SaveChangesAsync();
+        public int SaveChanges() => _context.SaveChanges();
 
     }
 }

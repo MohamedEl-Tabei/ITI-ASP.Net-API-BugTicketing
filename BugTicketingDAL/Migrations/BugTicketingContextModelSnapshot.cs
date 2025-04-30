@@ -36,14 +36,14 @@ namespace BugTicketingDAL.Migrations
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
 
-                    b.Property<int>("Type")
-                        .HasColumnType("int");
-
                     b.Property<DateTime>("UploadedAt")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("UserId")
                         .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("filePath")
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
@@ -335,6 +335,32 @@ namespace BugTicketingDAL.Migrations
                     b.HasIndex("UserId");
 
                     b.ToTable("UserBugs");
+
+                    b.HasData(
+                        new
+                        {
+                            BugId = new Guid("aaaa1111-bbbb-2222-cccc-333333333333"),
+                            UserId = "7a8bf7b6-4979-4729-bd78-80c1f39aad34",
+                            AssignedDate = new DateTime(2024, 4, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            BugId = new Guid("aaaa1111-bbbb-2222-cccc-333333333333"),
+                            UserId = "711a4a71-6a79-4c67-a5ff-7d38d6254a90",
+                            AssignedDate = new DateTime(2024, 4, 2, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            BugId = new Guid("bbbb2222-cccc-3333-dddd-444444444444"),
+                            UserId = "a23bb53a-7c52-4f13-8000-188ad242f04e",
+                            AssignedDate = new DateTime(2024, 4, 5, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            BugId = new Guid("cccc3333-dddd-4444-eeee-555555555555"),
+                            UserId = "711a4a71-6a79-4c67-a5ff-7d38d6254a90",
+                            AssignedDate = new DateTime(2024, 4, 7, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        });
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>

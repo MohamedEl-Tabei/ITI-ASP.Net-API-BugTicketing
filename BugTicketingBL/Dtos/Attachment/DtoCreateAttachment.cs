@@ -10,8 +10,6 @@ namespace BugTicketingBL.Dtos
     public class DtoCreateAttachment
     {
         public string? Title { get; set; }
-        public string? UserId { get; set; }
-        public Guid BugId { get; set; }
         public IFormFile? file { get; set; }
 
     }

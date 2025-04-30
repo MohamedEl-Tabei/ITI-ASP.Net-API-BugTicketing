@@ -29,6 +29,12 @@ namespace BugTicketingBL.Managers
             await _unitOfWork.SaveChangesAsync();
         }
 
+        public void Delete(string userId, Guid bugId)
+        {
+            _unitOfWork._repoUserBug.Delete(userId, bugId);
+            _unitOfWork.SaveChanges();
+        }
+
         public async Task<bool> IsDeveloperAsync(string userId)
         {
             var user = await _userManager.FindByIdAsync(userId);
@@ -43,5 +49,6 @@ namespace BugTicketingBL.Managers
             if (bug is null) return false;
             return true;
         }
+
     }
 }

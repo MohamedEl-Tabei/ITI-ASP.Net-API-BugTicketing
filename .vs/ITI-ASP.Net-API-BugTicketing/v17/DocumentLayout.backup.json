@@ -3,16 +3,12 @@
   "WorkspaceRootPath": "E:\\Mohamed\\ITI\\ITI-Projects\\ITI-ASP.Net-API-BugTicketing\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{7174F764-CDA9-4BC9-A395-17652C469443}|BugTicketing\\BugTicketing.csproj|e:\\mohamed\\iti\\iti-projects\\iti-asp.net-api-bugticketing\\bugticketing\\controllers\\attachmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7174F764-CDA9-4BC9-A395-17652C469443}|BugTicketing\\BugTicketing.csproj|solutionrelative:bugticketing\\controllers\\attachmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{7174F764-CDA9-4BC9-A395-17652C469443}|BugTicketing\\BugTicketing.csproj|e:\\mohamed\\iti\\iti-projects\\iti-asp.net-api-bugticketing\\bugticketing\\controllers\\userbugcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7174F764-CDA9-4BC9-A395-17652C469443}|BugTicketing\\BugTicketing.csproj|solutionrelative:bugticketing\\controllers\\userbugcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{93CA7D7A-66EB-45C2-94AA-ECAA0FC2B8B9}|BugTicketingBL\\BugTicketingBL.csproj|e:\\mohamed\\iti\\iti-projects\\iti-asp.net-api-bugticketing\\bugticketingbl\\dtos\\userbug\\dtouserid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{93CA7D7A-66EB-45C2-94AA-ECAA0FC2B8B9}|BugTicketingBL\\BugTicketingBL.csproj|solutionrelative:bugticketingbl\\dtos\\userbug\\dtouserid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7174F764-CDA9-4BC9-A395-17652C469443}|BugTicketing\\BugTicketing.csproj|e:\\mohamed\\iti\\iti-projects\\iti-asp.net-api-bugticketing\\bugticketing\\controllers\\testcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7174F764-CDA9-4BC9-A395-17652C469443}|BugTicketing\\BugTicketing.csproj|solutionrelative:bugticketing\\controllers\\testcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,45 +18,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "DtoUserId.cs",
-              "DocumentMoniker": "E:\\Mohamed\\ITI\\ITI-Projects\\ITI-ASP.Net-API-BugTicketing\\BugTicketingBL\\Dtos\\UserBug\\DtoUserId.cs",
-              "RelativeDocumentMoniker": "BugTicketingBL\\Dtos\\UserBug\\DtoUserId.cs",
-              "ToolTip": "E:\\Mohamed\\ITI\\ITI-Projects\\ITI-ASP.Net-API-BugTicketing\\BugTicketingBL\\Dtos\\UserBug\\DtoUserId.cs",
-              "RelativeToolTip": "BugTicketingBL\\Dtos\\UserBug\\DtoUserId.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-30T17:55:17.559Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "TestController.cs",
-              "DocumentMoniker": "E:\\Mohamed\\ITI\\ITI-Projects\\ITI-ASP.Net-API-BugTicketing\\BugTicketing\\Controllers\\TestController.cs",
-              "RelativeDocumentMoniker": "BugTicketing\\Controllers\\TestController.cs",
-              "ToolTip": "E:\\Mohamed\\ITI\\ITI-Projects\\ITI-ASP.Net-API-BugTicketing\\BugTicketing\\Controllers\\TestController.cs",
-              "RelativeToolTip": "BugTicketing\\Controllers\\TestController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-30T17:45:10.571Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
               "Title": "UserBugController.cs",
               "DocumentMoniker": "E:\\Mohamed\\ITI\\ITI-Projects\\ITI-ASP.Net-API-BugTicketing\\BugTicketing\\Controllers\\UserBugController.cs",
               "RelativeDocumentMoniker": "BugTicketing\\Controllers\\UserBugController.cs",
               "ToolTip": "E:\\Mohamed\\ITI\\ITI-Projects\\ITI-ASP.Net-API-BugTicketing\\BugTicketing\\Controllers\\UserBugController.cs",
               "RelativeToolTip": "BugTicketing\\Controllers\\UserBugController.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAUwB8AAAA+AAAAAAAAAA==",
+              "ViewState": "AgIAABkAAAAAAAAAAAAQwCgAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-30T17:44:55.132Z",
+              "WhenOpened": "2025-04-30T21:23:05.036Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AttachmentController.cs",
+              "DocumentMoniker": "E:\\Mohamed\\ITI\\ITI-Projects\\ITI-ASP.Net-API-BugTicketing\\BugTicketing\\Controllers\\AttachmentController.cs",
+              "RelativeDocumentMoniker": "BugTicketing\\Controllers\\AttachmentController.cs",
+              "ToolTip": "E:\\Mohamed\\ITI\\ITI-Projects\\ITI-ASP.Net-API-BugTicketing\\BugTicketing\\Controllers\\AttachmentController.cs",
+              "RelativeToolTip": "BugTicketing\\Controllers\\AttachmentController.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAQwCYAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-30T21:23:03.805Z",
               "EditorCaption": ""
             }
           ]
